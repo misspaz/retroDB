@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = "";
+const url = "mongodb+srv://misspaz:tukituki@cluster0.augsjtn.mongodb.net/retroshop?retryWrites=true&w=majority";
 
 const connectDb = async () => {
     try {
