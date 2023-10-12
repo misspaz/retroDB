@@ -4,6 +4,7 @@ const routerVideogames = require("./src/api/routes/videogames.routes");
 const routerShops = require("./src/api/routes/shop.routes");
 const routesUser = require("./src/api/routes/user.routes");
 
+
 const server = express();
 server.use(express.json());
 connectDb();

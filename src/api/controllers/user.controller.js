@@ -3,6 +3,15 @@ const { validateEmailDB, validatePassword } = require("../../utils/validator")
 const bycrypt = require("bcrypt");
 const { generateToken } = require("../../utils/jwt");
 
+const getUser = async (req, res) => {
+    try {
+        const user = await User.find();
+        return res.status(200).json(user)
+
+    } catch (error) {
+        return res.json(error)
+    }
+}
 
 const register = async (req, res) => {
     try {
@@ -53,4 +62,5 @@ const profile = async (req, res) => {
 
 
 
-module.exports = { register, login, profile }
+
+module.exports = { register, login, profile, getUser }
