@@ -154,7 +154,7 @@ const videogames = [{
 
 // En este caso, nos conectaremos de nuevo a nuestra base de datos
 // pero nos desconectaremos tras insertar los documentos
-mongoose.connect("mongodb+srv://misspaz:tukituki@cluster0.augsjtn.mongodb.net/retroshop?retryWrites=true&w=majority", {
+mongoose.connect("", { // aqui va el link de mongodb
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
