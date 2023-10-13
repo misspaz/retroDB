@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = "";
+const url = ""; // link de mongodb
 
 const connectDb = async () => {
     try {
