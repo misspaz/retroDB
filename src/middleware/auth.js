@@ -40,7 +40,7 @@ const isAdmin = async (req, res, next) => {
     const adminProfile = await User.findById(tokenVerified.id);
 
     if (adminProfile.role === "admin") {
-      req.adminProfile = adminProfile;
+      req.adminProfile = adminProfile; 
       next();
     } else {
       return res.status(500).json({ message: "Acceso denegado" });
