@@ -13,6 +13,5 @@ const validateEmailDB = async (emailUser) => {
     } catch (error) {
         console.log(error)
     }
-
 }
 module.exports = { validateEmailDB, validatePassword }

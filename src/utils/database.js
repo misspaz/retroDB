@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = "";
+const url = "mongodb+srv://Betulioo:D363u7X1EplrpKkL@cluster0.josec2n.mongodb.net/retroshop?retryWrites=true&w=majority&appName=AtlasApp";
 
 const connectDb = async () => {
     try {
