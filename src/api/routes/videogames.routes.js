@@ -3,8 +3,8 @@ const { getVideogame, postVideogame,  putVideogame, deleteVideogame, getVideogam
 
 const router = express.Router()
 
-router.get("/allvideogames", getVideogame);
-router.post("/uploadvideogame", postVideogame);
+router.get("/getallvideogames", getVideogame);
+router.post("/uploadvideogames", postVideogame);
 router.get("/:titleVideogame", getVideogamebyTitle);
 router.put("/:id", putVideogame);
 router.delete("/:id", deleteVideogame)

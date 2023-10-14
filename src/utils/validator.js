@@ -2,7 +2,7 @@ const User = require("../api/models/user.model");
 
 const validatePassword = (pass) => {
 
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/; 
+    const regex = /[A-Za-z\d$@$!%*?&]{8,15}/; 
     return regex.test(pass)
 }
 
@@ -13,5 +13,6 @@ const validateEmailDB = async (emailUser) => {
     } catch (error) {
         console.log(error)
     }
+
 }
 module.exports = { validateEmailDB, validatePassword }

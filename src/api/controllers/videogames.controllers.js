@@ -9,9 +9,6 @@ const getVideogame = async (req, res) => {
         return res.json(error)
     }
 };
-
-
-
 const postVideogame = async (req, res) => {
     try {
         const body = req.body;
@@ -26,7 +23,6 @@ const postVideogame = async (req, res) => {
         return res.json(error)
     }
 };
-
 const putVideogame = async (req, res) => {
     try {
         const { id } = req.params;
@@ -54,8 +50,6 @@ const deleteVideogame = async (req, res) => {
 
     }
 }
-
-
 const getVideogamebyTitle = async (req, res) => {
     try {
         const { titleVideogame } = req.params;
