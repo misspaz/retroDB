@@ -20,6 +20,9 @@ const postVideogame = async (req, res) => {
         // if (req.file.path) {
         //     videogame.image = req.file.path;
         // }
+        if (req.file.path) {
+            videogame.image = req.file.path;
+        }
         const createdVideogame = await videogame.save();
         return res.json(createdVideogame)
     } catch (error) {
@@ -32,6 +35,9 @@ const putVideogame = async (req, res) => {
         const { id } = req.params;
         const videogameBody = new Videogame(req.body);
         videogameBody._id = id;
+        if (req.file.path) {
+            videogame.image = req.file.path;
+        }
         const updateVideogame = await Videogame.findByIdAndUpdate(id, videogameBody, { new: true });
         if (!updateVideogame) {
             return res.status(404).json({ message: "Este videojuego no existe" })
