@@ -8,7 +8,7 @@ const videogameSchema = new Schema(
     genre: { type: String, require: true },
     year: { type: Number },
     country: { type: String },
-    image: { type: String },
+    image: { type: String, default: "" },
   },
   {
     collection: "videogame",
