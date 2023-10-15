@@ -8,10 +8,7 @@ const cors = require("cors")
 const server = express();
 
 //En este paso añadimos cors y definimos las direcciones que van a tener permiso para utilizar nuestra API. De momento en local:
-server.use(cors({
-  origin: 'http://localhost:5000',
-  credentials: true
-}));
+server.use(cors);
 
 
 
