@@ -9,7 +9,11 @@ const videogames = [{
     "title": "Cool World", 
     "genre": "Acción", 
     "year": 1993,
-    "región": "Eu",
+
+    "country": "Eu",
+
+  
+
     "image": ""
 },
 
@@ -17,7 +21,10 @@ const videogames = [{
     "title": "Mighty Morphin Power Rangers", 
     "genre": "Acción", 
     "year": 1993,
-    "región": "USA",
+
+    "country": "USA",
+
+
     "image": ""
 },
 
@@ -25,7 +32,11 @@ const videogames = [{
     "title": "Mega Man V", 
     "genre": "Acción", 
     "year": 1994,
-    "región": "Eu",
+
+    "country": "Eu",
+
+  
+
     "image": ""
 }, 
 
@@ -33,7 +44,11 @@ const videogames = [{
     "title": "Mario & Yoshi", 
     "genre": "Puzzle", 
     "year": 1992,
-    "región": "Eu",
+
+    "country": "Eu",
+
+   
+
     "image": ""
 }, 
 
@@ -41,7 +56,9 @@ const videogames = [{
     "title": "Mortal Kombat", 
     "genre": "Lucha", 
     "year": 1994,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 
@@ -49,7 +66,9 @@ const videogames = [{
     "title": "Pokémon Blue Version", 
     "genre": "RPG", 
     "year": 1999,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 
@@ -57,104 +76,136 @@ const videogames = [{
     "title": "Pokémon Red Version", 
     "genre": "RPG", 
     "year": 1999,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Pokémon Yellow Version: Special Pikachu Edition", 
     "genre": "RPG", 
     "year": 2000,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Superman", 
     "genre": "Acción", 
     "year": 1997,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "T2: The Arcade Game", 
     "genre": "Juego de Pistola", 
     "year": 1993,
-    "región": "Usa",
+
+    "country": "Usa",
+
     "image": ""
 }, 
 {
     "title": "The Amazing Spider-Man", 
     "genre": "Acción", 
     "year": 1990,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "The Amazing Spider-Man 2", 
     "genre": "Acción", 
     "year": 1992,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "The Legend of Zelda: Link's Awakening", 
     "genre": "Acción, Aventura", 
     "year": 1993,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Who Framed Roger Rabbit", 
     "genre": "Aventura", 
     "year": 1991,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Animaniacs", 
     "genre": "Acción", 
     "year": 1995,
-    "región": "Usa",
+
+    "country": "Usa",
+
     "image": ""
 }, 
 {
     "title": "Asterix & Obelix", 
     "genre": "Acción", 
     "year": 1995,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Bart Simpson's Escape from Camp Deadly", 
     "genre": "Acción", 
     "year": 1993,
-    "región": "Eu",
+
+    "country": "Eu",
+
     "image": ""
 }, 
 {
     "title": "Batman: The Video Game", 
     "genre": "Acción", 
     "year": 1990,
-    "región": "Usa",
+
+    "country": "Usa",
+
     "image": ""
 }, 
 {
     "title": "Beetlejuice", 
     "genre": "Acción", 
     "year": 1992,
-    "región": "USa",
+
+    "country": "USa",
+
     "image": ""
 }, 
 {
     "title": "Disney's Aladdin", 
     "genre": "Acción", 
     "year": 1993,
-    "región": "Usa",
+
+    "country": "Usa",
+
     "image": ""
 } ];
 
 // En este caso, nos conectaremos de nuevo a nuestra base de datos
 // pero nos desconectaremos tras insertar los documentos
+
+mongoose.connect(process.env.DB_URL, { // aqui va el link de mongodb
+
 mongoose.connect("", { // aqui va el link de mongodb
+
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

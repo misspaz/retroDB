@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 
-const url = ""; // link de mongodb
 
 const connectDb = async () => {
     try {
-        const db = await mongoose.connect(url, {
+        const db = await mongoose.connect(process.env.DB_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
