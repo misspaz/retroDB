@@ -29,7 +29,7 @@ server.use("/videogames", routerVideogames);
 
 server.use("/shops", routerShops);
 
-server.use("/user", routesUser);
+server.use("/user", routesUser);npm
 
 
 server.disable("x-powered-by");
