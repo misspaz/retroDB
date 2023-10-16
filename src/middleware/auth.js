@@ -30,7 +30,7 @@ const isAdmin = async (req, res, next) => {
     }
     const token = auth.split(" ")[1];
     const tokenVerified = verifyToken(token);
-    console.log(tokenVerified);
+    // console.log(tokenVerified);
 
     if (!tokenVerified.id) {
       return res

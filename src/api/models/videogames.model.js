@@ -9,11 +9,13 @@ const videogameSchema = new Schema(
     year: { type: Number },
     country: { type: String },
     image: { type: String, default: "" },
+    
   },
   {
     collection: "videogame",
   }
 );
+
 
 const Videogame = mongoose.model("videogame", videogameSchema);
 module.exports = Videogame;

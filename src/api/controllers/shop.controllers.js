@@ -3,6 +3,7 @@ const Shop = require("../models/shop.model");
 const getShop = async (req, res) => {
     try {
         const shops = await Shop.find().populate("videogames");
+        console.log(shops)
         return res.status(200).json(shops)
 
     } catch (error) {
@@ -60,7 +61,7 @@ const getShopbyName = async (req, res) => {
     try {
         const { nameShop } = req.params;
         const shop = await Shop.find({ name: nameShop });
-        return res.status(200).json(shops)
+        return res.status(200).json(shop)
     } catch {
         return res.json(error)
     }
