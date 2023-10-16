@@ -3,7 +3,9 @@ const Videogame = require("../models/videogames.model");
 const getVideogame = async (req, res) => {
   try {
     const videogames = await Videogame.find();
+    console.log(videogames);
     return res.status(200).json(videogames);
+    
   } catch (error) {
     return res.json(error);
   }
