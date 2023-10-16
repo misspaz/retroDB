@@ -202,7 +202,7 @@ const videogames = [{
 // En este caso, nos conectaremos de nuevo a nuestra base de datos
 // pero nos desconectaremos tras insertar los documentos
 
-mongoose.connect(process.env.DB_URL, { // aqui va el link de mongodb
+mongoose.connect(process.env.DB_URL) // aqui va el link de mongodb
 
 mongoose.connect("", { // aqui va el link de mongodb
 
