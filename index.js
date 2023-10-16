@@ -22,10 +22,6 @@ server.use(cors());
 //En este paso añadimos cors y definimos las direcciones que van a tener permiso para utilizar nuestra API. De momento en local:
 
 
-
-
-
-
 server.use(express.json());
 connectDb();
 
@@ -33,7 +29,7 @@ server.use("/videogames", routerVideogames);
 
 server.use("/shops", routerShops);
 
-server.use("/user", routesUser);
+server.use("/user", routesUser);npm
 
 
 server.disable("x-powered-by");
