@@ -58,8 +58,8 @@ const deleteVideogame = async (req, res) => {
 const getVideogamebyTitle = async (req, res) => {
   try {
     const { titleVideogame } = req.params;
-    const videogame = await Videogame.find({ name: titleVideogame });
-    return res.status(200).json(videogames);
+    const videogame = await Videogame.find({ title: titleVideogame });
+    return res.status(200).json(videogame);
   } catch {
     return res.json(error);
   }
